@@ -1,2 +1,64 @@
-@import ".theme/colors";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
 
+//font-family
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import "./theme/colors";
+
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    font-display: swap;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+html * {
+    font-family: "Roboto", sans-serif !important;
+}
+
+body {
+    background: $floral-white;
+}
+
+.pi {
+    font-family: 'primeicons' !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $taupe-gray;
+}
+
+::-webkit-scrollbar-track {
+    background: $silver;
+}
+
+::-webkit-scrollbar-corner {
+    background: $silver;
+}
+
+.p-datatable-wrapper {
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+    }
+}
+
+::selection {
+    color: $white;
+    background-color: $taupe-gray;
+}
+
+::-moz-selection {
+    color: $white;
+    background-color: $taupe-gray;
+}
