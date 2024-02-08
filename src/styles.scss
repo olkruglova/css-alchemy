@@ -5,13 +5,14 @@
 //font-family
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@import "./theme/colors";
-
 @font-face {
     font-family: "Roboto", sans-serif;
     src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
     font-display: swap;
 }
+
+@import "./theme/colors";
+@import "./theme/common";
 
 html {
     width: 100%;
@@ -24,10 +25,6 @@ html * {
 
 body {
     background: $floral-white;
-}
-
-.pi {
-    font-family: 'primeicons' !important;
 }
 
 ::-webkit-scrollbar {
@@ -45,12 +42,6 @@ body {
 
 ::-webkit-scrollbar-corner {
     background: $silver;
-}
-
-.p-datatable-wrapper {
-    &::-webkit-scrollbar-thumb {
-        border-radius: 4px;
-    }
 }
 
 ::selection {

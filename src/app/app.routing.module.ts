@@ -17,6 +17,7 @@ export const appRoutes: RouteExt[] = [
     component: MainComponent,
     data: { name: 'main', title: 'Main' },
   },
+  { path: "**", redirectTo: "main", pathMatch: "full" }
 ];
 
 @NgModule({

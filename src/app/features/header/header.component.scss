@@ -2,15 +2,9 @@
 
 :host ::ng-deep {
     .header {
-        -webkit-box-shadow: 0px 9px 21px 0px rgba(166, 162, 162, 1);
-        -moz-box-shadow: 0px 9px 21px 0px rgba(166, 162, 162, 1);
-        box-shadow: 0px 9px 21px 0px rgba(166, 162, 162, 1);
-    }
-
-    .logo {
-        width: 150px;
-        max-width: 150px;
-        height: auto;
+        -webkit-box-shadow: 0px 9px 21px 0px rgba(207, 210, 205, 1);
+        -moz-box-shadow: 0px 9px 21px 0px rgba(207, 210, 205, 1);
+        box-shadow: 0px 9px 21px 0px rgba(207, 210, 205, 1);
     }
 
     .p-tabmenu * {
@@ -22,9 +16,9 @@
     }
 
     .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
-        border-bottom: solid $text-header-middle;
+        border-bottom: solid $main-middle;
         border-width: 0 0 2px 0;
-        color: $text-header-middle;
+        color: $main-middle;
         text-decoration: none;
     }
 
