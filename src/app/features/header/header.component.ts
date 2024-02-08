@@ -13,8 +13,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
-      { label: 'Home' },
-      { label: 'Calendar' },
+      { label: 'Main' },
+      { label: 'Articles' },
       { label: 'Edit' },
       { label: 'Documentation' },
       { label: 'Settings' },

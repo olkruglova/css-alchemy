@@ -1,0 +1,20 @@
+@import "../../../theme/colors";
+
+:host ::ng-deep {
+    footer {
+        -webkit-box-shadow: 0px -9px 21px 0px rgba(207, 210, 205, 1);
+        -moz-box-shadow: 0px -9px 21px 0px rgba(207, 210, 205, 1);
+        box-shadow: 0px -9px 21px 0px rgba(207, 210, 205, 1);
+    }
+
+    .footer-top-container {
+        color: $floral-white;
+        min-height: 200px;
+        background-color: $taupe-gray-main;
+    }
+
+    .footer-bottom-container {
+        min-height: 60px;
+        background-color: $taupe-gray-300;
+    }
+}
