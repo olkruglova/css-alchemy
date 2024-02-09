@@ -1,28 +1,41 @@
 //palette
-$floral-white: #fbfbf2;
+// $floral-white: #fbfbf2;
+$floral-white: #f5f5f4;
 $platinum: #e5e6e4;
 $gray: #cfd2cd;
 $silver: #a6a2a2;
 $taupe-gray: #847577;
 
 //taupe-gray
-$taupe-gray-900: #615658;
-$taupe-gray-800: #6c6062;
-$taupe-gray-700: #77696b;
-$taupe-gray-600: #847577;
-$taupe-gray-500: #96888a;
-$taupe-gray-400: #9f9395;
-$taupe-gray-300: #a99ea0;
-$taupe-gray-200: #b2a9aa;
-$taupe-gray-100: #bcb3b4;
+// $taupe-gray-900: #615658;
+// $taupe-gray-800: #6c6062;
+// $taupe-gray-700: #77696b;
+// $taupe-gray-600: #847577;
+// $taupe-gray-500: #96888a;
+// $taupe-gray-400: #9f9395;
+// $taupe-gray-300: #a99ea0;
+// $taupe-gray-200: #b2a9aa;
+// $taupe-gray-100: #bcb3b4;
+// $taupe-gray-main: $taupe-gray-600;
+
+//taupe-gray
+$taupe-gray-900: #2e2426;
+$taupe-gray-800: #392d30;
+$taupe-gray-700: #45363a;
+$taupe-gray-600: #4e3d42;
+$taupe-gray-500: #5b484e;
+$taupe-gray-400: #725a62;
+$taupe-gray-300: #896c76;
+$taupe-gray-200: #a58d95;
+$taupe-gray-100: #b7a4aa;
 $taupe-gray-main: $taupe-gray-600;
 
 
 //text
 $text-black: #333333;
-$main-strong: #4c4345;
-$main-middle: #615658;
-$text-subheader: #4c4344;
+$main-strong: $taupe-gray-900;
+$main-middle: $taupe-gray-800;
+$text-subheader: $taupe-gray-700;
 $text-gray: #7d7878;
 
 //achromatic colors
