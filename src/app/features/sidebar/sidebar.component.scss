@@ -1,0 +1,45 @@
+@import "../../../theme/colors";
+
+:host ::ng-deep {
+    * {
+        color: $main-strong;
+        background-color: $floral-white;
+        border: none;
+    }
+
+    .sidebar {
+        width: 300px;
+        min-height: 500px;
+        background: $floral-white;
+    }
+
+    .p-tree {
+        padding: 0;
+
+        ul.p-tree-container {
+            padding: 18px 0 0;
+
+            li {
+                padding: 0;
+            }
+        }
+    }
+
+    .p-treenode-content {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        &:hover {
+            -webkit-box-shadow: 0px -6px 17px 0px rgba(207, 210, 205, 1);
+            -moz-box-shadow: 0px -6px 17px 0px rgba(207, 210, 205, 1);
+            box-shadow: 0px -6px 17px 0px rgba(207, 210, 205, 1);
+        }
+
+        .p-treenode-label,
+        .p-treenode-label span {
+            background: transparent !important;
+        }
+    }
+}

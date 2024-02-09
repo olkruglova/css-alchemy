@@ -1,3 +1,5 @@
+@import "./colors";
+
 .pi {
     font-family: 'primeicons' !important;
 }
@@ -20,4 +22,28 @@
     box-shadow: 0px 0px 21px 0px rgba(207, 210, 205, 1);
     border-radius: 4px;
     border: none;
+}
+
+button {
+    background: transparent !important;
+
+    i {
+        color: $gray !important;
+    }
+
+    &:hover {
+        i {
+            color: $main-middle !important;
+        }
+    }
+}
+
+.p-tooltip {
+    .p-tooltip-text {
+        color: $main-middle !important;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        background: $white;
+        font-size: 13px;
+    }
 }

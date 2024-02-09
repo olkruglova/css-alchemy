@@ -1,0 +1,11 @@
+<div class="sidebar card">
+    <div class="action-buttons d-flex justify-content-end pt-1 pe-1">
+        <button type="button" (click)="expandCollapseAll()" class="mr-2" [pTooltip]="tooltip">
+            <i [ngClass]="isExpandedAll ? 'bi bi-arrows-collapse' : 'bi bi-arrows-expand'"></i></button>
+    </div>
+    <p-tree [value]="items" class="w-full md:w-30rem"></p-tree>
+</div>
+
+<ng-template #tooltip>
+    <cssalc-tooltip [tooltipText]="isExpandedAll ? 'Collapse all' : 'Expand all'"></cssalc-tooltip>
+</ng-template>
