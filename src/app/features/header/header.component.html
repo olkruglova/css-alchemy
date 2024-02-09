@@ -1,9 +1,9 @@
 <header class="header d-flex align-items-center justify-content-start">
     <div class="container d-flex align-items-center">
-        <a class="navbar-brand mx-0 me-3 pe-3 text-truncate" [routerLink]="['/main']">
+        <a class="navbar-brand mx-0 me-3 pe-3 text-truncate" [routerLink]="['/overview']">
             <img class="logo me-4 ms-5" src="/assets/css-alchemy-logo-dark.png" alt="css-alchemy-logo">
         </a>
-        <div class="menu"><p-tabMenu [model]="items || []" [activeItem]="activeItem || {}"
+        <div class="menu"><p-tabMenu [model]="tabItems || []" [activeItem]="activeItem || {}"
                 (activeItemChange)="onActiveItemChange($event)"></p-tabMenu></div>
     </div>
 </header>
