@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, Route, RouterModule } from '@angular/router';
 import { MainComponent } from './features/main/main.component';
+import { OverviewComponent } from './features/overview/overview.component';
 
 export interface RouteExt extends Route {
   data?: {
@@ -17,7 +18,13 @@ export const appRoutes: RouteExt[] = [
     component: MainComponent,
     data: { name: 'main', title: 'Main' },
   },
-  { path: "**", redirectTo: "main", pathMatch: "full" }
+  {
+    path: 'overview',
+    pathMatch: 'full',
+    component: OverviewComponent,
+    data: { name: 'overview', title: 'Overview' },
+  },
+  { path: '**', redirectTo: 'overview', pathMatch: 'full' },
 ];
 
 @NgModule({
