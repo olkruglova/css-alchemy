@@ -41,4 +41,159 @@
     .card-light {
         background: $gray;
     }
+
+    .card-content {
+        height: 100%;
+    }
+
+    .btn-shadow {
+        background-color: transparent;
+        border-radius: 7px;
+        width: 110px;
+        height: 40px;
+        border: none;
+        display: inline-block;
+        font-size: 1em;
+        font-weight: 900;
+        padding: 10px 22px;
+        -webkit-transition: background-color .2s ease;
+        transition: background-color .2s ease;
+        white-space: nowrap;
+    }
+
+    .btn-shadow-1 {
+        animation: shadowPulse 1.6s infinite;
+        animation-direction: alternate;
+        -webkit-animation: shadowPulse 1.6s ease-out infinite;
+        -webkit-animation-direction: alternate;
+    }
+
+
+    .btn-shadow-2 {
+        animation: shadowDisappear 1.6s infinite;
+        animation-direction: alternate;
+        -webkit-animation: shadowDisappear 1.6s ease-out infinite;
+        -webkit-animation-direction: alternate;
+    }
+
+    .btn-shadow-3 {
+        border: 1px solid $taupe-gray-900 !important;
+        animation: movingShadow 3s linear infinite;
+        -webkit-animation: movingShadow 3s linear infinite;
+    }
+
+    .vertical-text {
+        color: $floral-white;
+        position: absolute;
+        right: -30%;
+        transform: rotate(-90deg);
+        transform-origin: center;
+    }
+
+    @keyframes shadowPulse {
+        from {
+            box-shadow: inset 2px 2px 10px $taupe-gray-900, 0 0 0px $taupe-gray-900;
+        }
+
+        to {
+            box-shadow: inset 0 0 0px $taupe-gray-900, 5px 5px 10px $taupe-gray-900;
+        }
+    }
+
+    @-webkit-keyframes shadowPulse {
+        from {
+            -webkit-box-shadow: inset 2px 2px 10px $taupe-gray-900, 0 0 0px $taupe-gray-900;
+        }
+
+        to {
+            -webkit-box-shadow: inset 0 0 0px $taupe-gray-900, 5px 5px 10px $taupe-gray-900;
+        }
+    }
+
+    @keyframes shadowDisappear {
+        from {
+            box-shadow: 5px 5px 10px $taupe-gray-900, -5px -5px 8px $floral-white;
+        }
+
+        to {
+            box-shadow: none;
+        }
+    }
+
+    @-webkit-keyframes shadowDisappear {
+        from {
+            -webkit-box-shadow: 5px 5px 10px $taupe-gray-900, -5px -5px 8px $floral-white;
+        }
+
+        to {
+            -webkit-box-shadow: none;
+        }
+    }
+
+    @keyframes movingShadow {
+        0% {
+            box-shadow: 16px 8px $taupe-gray-900;
+        }
+
+        25% {
+            box-shadow: -16px 8px $taupe-gray-900;
+        }
+
+        50% {
+            box-shadow: -16px -8px $taupe-gray-900;
+        }
+
+        75% {
+            box-shadow: 16px -8px $taupe-gray-900;
+        }
+
+        100% {
+            box-shadow: 16px 8px $taupe-gray-900;
+        }
+    }
+
+    @-webkit-keyframes movingShadow {
+        0% {
+            -webkit-box-shadow: 16px 8px $taupe-gray-900;
+        }
+
+        25% {
+            -webkit-box-shadow: -16px 8px $taupe-gray-900;
+        }
+
+        50% {
+            -webkit-box-shadow: -16px -8px $taupe-gray-900;
+        }
+
+        75% {
+            -webkit-box-shadow: 16px -8px $taupe-gray-900;
+        }
+
+        100% {
+            -webkit-box-shadow: 16px 8px $taupe-gray-900;
+        }
+    }
+
+    #text-animation-container {
+        position: relative;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+
+        filter: url(#threshold) blur(0.6px);
+    }
+
+    #text1,
+    #text2 {
+        color: $taupe-gray-900;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        display: inline-block;
+        font-size: 3rem;
+        text-align: center;
+        user-select: none;
+    }
+
+
 }

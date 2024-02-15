@@ -13,7 +13,19 @@
         </div>
         <div class="row g-3">
             <div class="col-3">
-                <div class="card card-wide card-mid-dark"></div>
+                <div class="card card-wide card-mid-dark">
+                    <div class="card-content p-5 d-flex align-items-center">
+                        <div class="col-9 flex-column">
+                            <div class="btn-shadow btn-shadow-1 mb-5"></div>
+                            <div class="btn-shadow btn-shadow-2 mb-5"></div>
+                            <div class="btn-shadow btn-shadow-3"></div>
+                        </div>
+                        <div class="col-3 d-flex align-items-center">
+                            <h3 class="d-flex vertical-text">Shadow Techniques</h3>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="col-3">
                 <div class="row g-3 flex-column">
@@ -29,8 +41,25 @@
                 <div class="card card-wide card-mid-dark"></div>
             </div>
             <div class="col-3">
-                <div class="card card-wide card-light"></div>
+                <div class="card card-wide card-light">
+                    <div id="text-animation-container">
+                        <span #text1 id="text1"></span>
+                        <span #text2 id="text2"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
+<svg id="filters">
+    <defs>
+        <filter id="threshold">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+        </filter>
+    </defs>
+</svg>
