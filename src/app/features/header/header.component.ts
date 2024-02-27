@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'cssalc-header',
@@ -7,9 +6,9 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  public tabItems: MenuItem[] | null = null;
+  public tabItems: any | null = null;
 
-  public activeItem: MenuItem | null = null;
+  public activeItem: any | null = null;
 
   ngOnInit() {
     this.tabItems = [
@@ -23,7 +22,7 @@ export class HeaderComponent implements OnInit {
     this.activeItem = this.tabItems[0];
   }
 
-  public onActiveItemChange(event: MenuItem) {
+  public onActiveItemChange(event: any) {
     this.activeItem = event;
   }
 }

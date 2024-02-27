@@ -2,7 +2,7 @@
 
 :host ::ng-deep {
     .overview-wrapper {
-        background-color: $floral-white;
+        background-color: $white-blue-light;
         width: 100%;
         height: 100%;
     }
@@ -30,12 +30,12 @@
     }
 
     .card-dark {
-        background: $taupe-gray-900;
-        color: $floral-white;
+        background: $aquamarine;
+        color: $white-blue-light;
     }
 
     .card-mid-dark {
-        background: $taupe-gray-400;
+        background: $blue-200;
     }
 
     .card-light {
@@ -77,13 +77,13 @@
     }
 
     .btn-shadow-3 {
-        border: 1px solid $taupe-gray-900 !important;
+        border: 1px solid $aquamarine !important;
         animation: movingShadow 3s linear infinite;
         -webkit-animation: movingShadow 3s linear infinite;
     }
 
     .vertical-text {
-        color: $floral-white;
+        color: $white-blue-light;
         position: absolute;
         right: -30%;
         transform: rotate(-90deg);
@@ -92,27 +92,27 @@
 
     @keyframes shadowPulse {
         from {
-            box-shadow: inset 2px 2px 10px $taupe-gray-900, 0 0 0px $taupe-gray-900;
+            box-shadow: inset 2px 2px 10px $aquamarine, 0 0 0px $aquamarine;
         }
 
         to {
-            box-shadow: inset 0 0 0px $taupe-gray-900, 5px 5px 10px $taupe-gray-900;
+            box-shadow: inset 0 0 0px $aquamarine, 5px 5px 10px $aquamarine;
         }
     }
 
     @-webkit-keyframes shadowPulse {
         from {
-            -webkit-box-shadow: inset 2px 2px 10px $taupe-gray-900, 0 0 0px $taupe-gray-900;
+            -webkit-box-shadow: inset 2px 2px 10px $aquamarine, 0 0 0px $aquamarine;
         }
 
         to {
-            -webkit-box-shadow: inset 0 0 0px $taupe-gray-900, 5px 5px 10px $taupe-gray-900;
+            -webkit-box-shadow: inset 0 0 0px $aquamarine, 5px 5px 10px $aquamarine;
         }
     }
 
     @keyframes shadowDisappear {
         from {
-            box-shadow: 5px 5px 10px $taupe-gray-900, -5px -5px 8px $floral-white;
+            box-shadow: 5px 5px 10px $aquamarine, -5px -5px 8px $white-blue-light;
         }
 
         to {
@@ -122,7 +122,7 @@
 
     @-webkit-keyframes shadowDisappear {
         from {
-            -webkit-box-shadow: 5px 5px 10px $taupe-gray-900, -5px -5px 8px $floral-white;
+            -webkit-box-shadow: 5px 5px 10px $aquamarine, -5px -5px 8px $white-blue-light;
         }
 
         to {
@@ -132,45 +132,45 @@
 
     @keyframes movingShadow {
         0% {
-            box-shadow: 16px 8px $taupe-gray-900;
+            box-shadow: 16px 8px $aquamarine;
         }
 
         25% {
-            box-shadow: -16px 8px $taupe-gray-900;
+            box-shadow: -16px 8px $aquamarine;
         }
 
         50% {
-            box-shadow: -16px -8px $taupe-gray-900;
+            box-shadow: -16px -8px $aquamarine;
         }
 
         75% {
-            box-shadow: 16px -8px $taupe-gray-900;
+            box-shadow: 16px -8px $aquamarine;
         }
 
         100% {
-            box-shadow: 16px 8px $taupe-gray-900;
+            box-shadow: 16px 8px $aquamarine;
         }
     }
 
     @-webkit-keyframes movingShadow {
         0% {
-            -webkit-box-shadow: 16px 8px $taupe-gray-900;
+            -webkit-box-shadow: 16px 8px $aquamarine;
         }
 
         25% {
-            -webkit-box-shadow: -16px 8px $taupe-gray-900;
+            -webkit-box-shadow: -16px 8px $aquamarine;
         }
 
         50% {
-            -webkit-box-shadow: -16px -8px $taupe-gray-900;
+            -webkit-box-shadow: -16px -8px $aquamarine;
         }
 
         75% {
-            -webkit-box-shadow: 16px -8px $taupe-gray-900;
+            -webkit-box-shadow: 16px -8px $aquamarine;
         }
 
         100% {
-            -webkit-box-shadow: 16px 8px $taupe-gray-900;
+            -webkit-box-shadow: 16px 8px $aquamarine;
         }
     }
 
@@ -185,7 +185,7 @@
 
     #text1,
     #text2 {
-        color: $taupe-gray-900;
+        color: $aquamarine;
         position: absolute;
         top: 40%;
         width: 100%;

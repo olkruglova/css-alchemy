@@ -2,15 +2,15 @@
 
 :host ::ng-deep {
     * {
-        color: $main-strong;
-        background-color: $floral-white;
+        color: $text-main-strong;
+        background-color: $white-blue-light;
         border: none;
     }
 
     .sidebar {
         width: 300px;
         min-height: 500px;
-        background: $floral-white;
+        background: $white-blue-light;
     }
 
     .p-tree {

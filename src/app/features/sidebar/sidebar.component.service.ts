@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { TreeNode } from 'primeng/api';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +11,7 @@ export class SidebarComponentService {
 
   constructor() {}
 
-  public getItems(): Promise<TreeNode[]> {
+  public getItems(): Promise<any> {
     return new Promise((resolve, reject) => {
       const items = [
         {
