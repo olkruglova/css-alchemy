@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { SidebarComponentService } from './sidebar.component.service';
 
 @Component({
@@ -8,7 +7,7 @@ import { SidebarComponentService } from './sidebar.component.service';
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent implements OnInit {
-  public items: TreeNode[] | null = null;
+  public items: any | null = null;
   public isExpandedAll: boolean = false;
 
   constructor(private sidebarService: SidebarComponentService) {}
@@ -31,15 +30,15 @@ export class SidebarComponent implements OnInit {
 
   expandCollapseAll() {
     this.isExpandedAll = !this.isExpandedAll;
-    this.items?.forEach((node) => {
+    this.items?.forEach((node: any) => {
       this.expandRecursive(node, this.isExpandedAll);
     });
   }
 
-  private expandRecursive(node: TreeNode, isExpand: boolean) {
+  private expandRecursive(node: any, isExpand: boolean) {
     node.expanded = isExpand;
     if (node.children) {
-      node.children.forEach((childNode) => {
+      node.children.forEach((childNode: any) => {
         this.expandRecursive(childNode, isExpand);
       });
     }

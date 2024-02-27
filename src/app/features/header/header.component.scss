@@ -9,7 +9,7 @@
     }
 
     .p-tabmenu * {
-        background: $floral-white;
+        background: $white;
     }
 
     .p-tabmenu .p-tabmenu-nav {
@@ -17,16 +17,16 @@
     }
 
     .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
-        border-bottom: solid $main-middle;
+        border-bottom: solid $text-main-middle;
         border-width: 0 0 2px 0;
-        color: $main-middle;
+        color: $text-main-middle;
         text-decoration: none;
     }
 
     .p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
         border: solid transparent;
         border-width: 0 0 2px 0;
-        color: $taupe-gray;
+        color: $blue-main;
         text-decoration: none;
     }
 }

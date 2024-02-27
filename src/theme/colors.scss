@@ -1,43 +1,73 @@
 //palette
 // $floral-white: #fbfbf2;
-$floral-white: #f5f5f4;
-$platinum: #e5e6e4;
+// $floral-white: #f5f5f4;
+// $platinum: #e5e6e4;
+// $gray: #cfd2cd;
+// $cool-gray: #a6a2a2;
+// $blue-main: #847577;
+
+//taupe-gray
+// $aquamarine: #615658;
+// $blue-main-800: #6c6062;
+// $blue-main-700: #77696b;
+// $blue-main-600: #847577;
+// $blue-main-500: #96888a;
+// $blue-200: #9f9395;
+// $blue-200: #a99ea0;
+// $blue-main-200: #b2a9aa;
+// $blue-main-100: #bcb3b4;
+// $blue-main: $blue-main-600;
+
+//taupe-gray
+// $aquamarine: #2e2426;
+// $blue-main-800: #392d30;
+// $blue-main-700: #45363a;
+// $blue-main-600: #4e3d42;
+// $blue-main-500: #5b484e;
+// $blue-200: #725a62;
+// $blue-200: #896c76;
+// $blue-main-200: #a58d95;
+// $blue-main-100: #b7a4aa;
+// $blue-main: $blue-main-600;
+
+//raisin-black
+$raisin-black-100: #3F3F78;
+$raisin-black-200: #38386B;
+$raisin-black-300: #31315E;
+$raisin-black-400: #2A2A50;
+$raisin-black-500: #232343;
+$raisin-black-600: #1C1C35;
+$raisin-black-700: #151628;
+$raisin-black-800: #0E0F1B;
+$raisin-black-900: #07070D;
+
+
+//blue
+$blue-100: #C2E4FE;
+$blue-200: #AEDCFE;
+$blue-300: #9AD3FE;
+$blue-400: #7CC6FE;
+$blue-500: #5DB8FD;
+$blue-600: #49AFFD;
+$blue-700: #219DFD;
+$blue-800: #028AF2;
+$blue-900: #0273CA;
+
+//colors
+$white-blue-light: #F4FAFF;
+$blue-main: $blue-400;
+$aquamarine: #5DFDCB;
+$cool-gray: #8789C0;
+$raisin-black: #151628;
 $gray: #cfd2cd;
-$silver: #a6a2a2;
-$taupe-gray: #847577;
-
-//taupe-gray
-// $taupe-gray-900: #615658;
-// $taupe-gray-800: #6c6062;
-// $taupe-gray-700: #77696b;
-// $taupe-gray-600: #847577;
-// $taupe-gray-500: #96888a;
-// $taupe-gray-400: #9f9395;
-// $taupe-gray-300: #a99ea0;
-// $taupe-gray-200: #b2a9aa;
-// $taupe-gray-100: #bcb3b4;
-// $taupe-gray-main: $taupe-gray-600;
-
-//taupe-gray
-$taupe-gray-900: #2e2426;
-$taupe-gray-800: #392d30;
-$taupe-gray-700: #45363a;
-$taupe-gray-600: #4e3d42;
-$taupe-gray-500: #5b484e;
-$taupe-gray-400: #725a62;
-$taupe-gray-300: #896c76;
-$taupe-gray-200: #a58d95;
-$taupe-gray-100: #b7a4aa;
-$taupe-gray-main: $taupe-gray-600;
-
 
 //text
 $text-black: #333333;
-$main-strong: $taupe-gray-900;
-$main-middle: $taupe-gray-800;
-$text-subheader: $taupe-gray-700;
+$text-main-strong: $raisin-black;
+$text-main-middle: $raisin-black-600;
+$text-subheader: $raisin-black-500;
 $text-gray: #7d7878;
 
 //achromatic colors
 $white: #ffffff;
-$black: #141414;
+$black: $raisin-black-900;

@@ -33,14 +33,14 @@ button {
 
     &:hover {
         i {
-            color: $main-middle !important;
+            color: $text-main-middle !important;
         }
     }
 }
 
 .p-tooltip {
     .p-tooltip-text {
-        color: $main-middle !important;
+        color: $text-main-middle !important;
         padding-top: 6px;
         padding-bottom: 6px;
         background: $white;
