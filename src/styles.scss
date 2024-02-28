@@ -7,8 +7,7 @@
     font-display: swap;
 }
 
-@import "./theme/colors";
-@import "./theme/common";
+@import "./theme";
 
 html {
     width: 100%;
@@ -29,15 +28,15 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $blue-main;
+    background: $gray;
 }
 
 ::-webkit-scrollbar-track {
-    background: $cool-gray;
+    background: $white-blue;
 }
 
 ::-webkit-scrollbar-corner {
-    background: $cool-gray;
+    background: $white-blue;
 }
 
 ::selection {

@@ -1,0 +1,27 @@
+$shadow-dark: rgba(157, 180, 192, 1);
+$shadow-dark-strong: rgba(50, 66, 74, 0.5);
+$shadow-light: rgb(244, 250, 255, 1);
+
+@mixin box-shadow {
+    -webkit-box-shadow: 0px 0px 9px 0px $shadow-dark;
+    -moz-box-shadow: 0px 0px 9px 0px $shadow-dark;
+    box-shadow: 0px 0px 9px 0px $shadow-dark;
+}
+
+@mixin box-shadow-extended-dark {
+    -webkit-box-shadow: 0px 0px 15px 0px $shadow-dark-strong;
+    -moz-box-shadow: 0px 0px 15px 0px $shadow-dark-strong;
+    box-shadow: 0px 0px 15px 0px $shadow-dark-strong;
+}
+
+@mixin box-shadow-top {
+    -webkit-box-shadow: 0px -9px 21px 0px $shadow-dark;
+    -moz-box-shadow: 0px -9px 21px 0px $shadow-dark;
+    box-shadow: 0px -9px 21px 0px $shadow-dark;
+}
+
+@mixin box-shadow-bottom {
+    -webkit-box-shadow: 0px 9px 21px 0px $shadow-dark;
+    -moz-box-shadow: 0px 9px 21px 0px $shadow-dark;
+    box-shadow: 0px 9px 21px 0px $shadow-dark;
+}

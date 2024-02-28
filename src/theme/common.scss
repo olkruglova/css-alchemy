@@ -1,14 +1,5 @@
-@import "./colors";
-
-.pi {
-    font-family: 'primeicons' !important;
-}
-
-.logo {
-    width: 150px;
-    max-width: 150px;
-    height: auto;
-}
+@import "colors";
+@import "mixins";
 
 .container {
     width: 80%;
@@ -17,9 +8,7 @@
 }
 
 .card {
-    -webkit-box-shadow: 0px 0px 21px 0px rgba(207, 210, 205, 1);
-    -moz-box-shadow: 0px 0px 21px 0px rgba(207, 210, 205, 1);
-    box-shadow: 0px 0px 21px 0px rgba(207, 210, 205, 1);
+    @include box-shadow;
     border-radius: 4px;
     border: none;
 }
@@ -38,12 +27,10 @@ button {
     }
 }
 
-.p-tooltip {
-    .p-tooltip-text {
-        color: $text-main-middle !important;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        background: $white;
-        font-size: 13px;
-    }
+.text-white {
+    color: $white;
+}
+
+.text-blue-white {
+    color: $white-blue;
 }
