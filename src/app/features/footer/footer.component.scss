@@ -1,20 +1,25 @@
-@import "../../../theme/colors";
+@import "../../../theme";
 
 :host ::ng-deep {
     footer {
-        -webkit-box-shadow: 0px -9px 21px 0px rgba(207, 210, 205, 1);
-        -moz-box-shadow: 0px -9px 21px 0px rgba(207, 210, 205, 1);
-        box-shadow: 0px -9px 21px 0px rgba(207, 210, 205, 1);
+        @include box-shadow-top;
+
+        img.logo {
+            width: 100px;
+            max-width: 100px;
+            height: auto;
+        }
     }
 
     .footer-top-container {
-        color: $white-blue-light;
-        min-height: 200px;
-        background-color: $blue-main;
+        color: $gray;
+        min-height: 400px;
+        background-color: $black-main;
+
     }
 
     .footer-bottom-container {
         min-height: 60px;
-        background-color: $blue-200;
+        background-color: $aquamarine;
     }
 }

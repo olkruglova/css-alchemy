@@ -3,14 +3,14 @@
 :host ::ng-deep {
     * {
         color: $text-main-strong;
-        background-color: $white-blue-light;
+        background-color: $white-blue;
         border: none;
     }
 
     .sidebar {
         width: 300px;
         min-height: 500px;
-        background: $white-blue-light;
+        background: $white-blue;
     }
 
     .p-tree {

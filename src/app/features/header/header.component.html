@@ -1,12 +1,15 @@
 <header class="header d-flex align-items-center justify-content-start">
     <div class="container d-flex align-items-center">
-        <!-- <a class="navbar-brand mx-0 me-3 pe-3 text-truncate" [routerLink]="['/overview']">
-            <img class="logo me-4 ms-5" src="/assets/css-alchemy-logo-dark.png" alt="css-alchemy-logo">
-        </a> -->
-        <div class="menu">
-            <!-- <p-tabMenu [model]="tabItems || []" [activeItem]="activeItem || {}"
-                (activeItemChange)="onActiveItemChange($event)">
-            </p-tabMenu> -->
+        <a class="navbar-brand" [routerLink]="['/overview']">
+            <img class="logo" src="/assets/logo-dark.png" alt="css-alchemy-logo">
+        </a>
+        <div class="nav-menu-container w-100">
+            <ul class="nav-menu d-flex w-100 m-0 p-0">
+                <li *ngFor="let tab of tabItems" class="nav-menu-item text-blue-white">
+                    <a class="nav-link" [routerLink]="tab.routerLink" [attr.data-name]="tab.name" data-toggle="tab"
+                        routerLinkActive="active">{{ tab.label }}</a>
+                </li>
+            </ul>
         </div>
     </div>
 </header>
