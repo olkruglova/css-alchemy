@@ -7,6 +7,7 @@
         position: relative;
         height: 80px;
         width: 100%;
+        transition: all 0.3s ease-in-out;
     }
 
     .navbar-brand {
@@ -16,6 +17,7 @@
         position: absolute;
         overflow: hidden;
         border-radius: 50%;
+        transition: all 0.3s ease-in-out;
 
         img.logo {
             display: inline;
@@ -70,5 +72,55 @@
                 }
             }
         }
+    }
+
+    .side-menu {
+        width: 280px;
+        position: absolute;
+        z-index: 5;
+        top: 60px;
+        right: 0px;
+        transition: all 0.3s ease-in;
+        background-color: $black-main;
+        opacity: 0.8;
+        border-bottom-left-radius: 22px;
+
+        &.hidden {
+            right: -300px;
+        }
+
+        ul.nav-menu {
+            list-style-type: none;
+        }
+    }
+
+    .ham-menu-container {
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        font-size: 2rem;
+        cursor: pointer
+    }
+
+    @media #{gt-xs},
+    #{$lt-lg} {
+        .navbar-brand {
+            width: 90px;
+            height: 90px;
+        }
+
+        .header {
+            height: 60px;
+        }
+
+        .nav-menu-container {
+            margin-left: 100px;
+
+            .nav-menu-item {
+                font-size: 0.85rem;
+            }
+        }
+
+
     }
 }

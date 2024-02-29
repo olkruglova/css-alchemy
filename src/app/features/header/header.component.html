@@ -1,9 +1,9 @@
 <header class="header d-flex align-items-center justify-content-start">
-    <div class="container d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
         <a class="navbar-brand" [routerLink]="['/overview']">
             <img class="logo" src="/assets/logo-dark.png" alt="css-alchemy-logo">
         </a>
-        <div class="nav-menu-container w-100">
+        <div *ngIf="showNavbar" class="nav-menu-container w-100">
             <ul class="nav-menu d-flex w-100 m-0 p-0">
                 <li *ngFor="let tab of tabItems" class="nav-menu-item text-blue-white">
                     <a class="nav-link" [routerLink]="tab.routerLink" [attr.data-name]="tab.name" data-toggle="tab"
@@ -11,5 +11,17 @@
                 </li>
             </ul>
         </div>
+        <div *ngIf="!showNavbar" class="ham-menu-container" (click)="toggleSideMenu()">
+            <i class="bi bi-list text-blue-white"></i>
+        </div>
+    </div>
+
+    <div *ngIf="!showNavbar" class="side-menu px-4 py-3" [ngClass]="{'hidden': !showSideMenu}">
+        <ul class="nav-menu w-100 m-0 p-0">
+            <li *ngFor="let tab of tabItems" class="nav-menu-item text-blue-white py-2">
+                <a class="nav-link" [routerLink]="tab.routerLink" [attr.data-name]="tab.name" data-toggle="tab"
+                    routerLinkActive="active">{{ tab.label }}</a>
+            </li>
+        </ul>
     </div>
 </header>
