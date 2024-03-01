@@ -39,6 +39,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   toggleSideMenu() {
+    console.log('toggleSideMenu');
     this.showSideMenu = !this.showSideMenu;
   }
 
