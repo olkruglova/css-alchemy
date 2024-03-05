@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { MainComponent } from './main.component';
-import { SidebarComponent } from '../sidebar/sidebar.component';
 import { SidebarModule } from '../sidebar/sidebar.module';
 
 @NgModule({
