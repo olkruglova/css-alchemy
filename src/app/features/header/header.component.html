@@ -11,21 +11,21 @@
                 </li>
             </ul>
         </div>
-        <div *ngIf="!showNavbar" class="ham-menu-container" (click)="toggleSideMenu()" [ngClass]="{'opened': showSideMenu}">
+        <div *ngIf="!showNavbar" class="ham-menu-container" (click)="toggleSideMenu()"
+            [ngClass]="{'opened': showSideMenu}">
             <i *ngIf="!showSideMenu" class="bi bi-list text-blue-white ham-menu-icon-open"></i>
             <i *ngIf="showSideMenu" class="bi bi-x-lg text-blue-white ham-menu-icon-close"></i>
         </div>
     </div>
-
-    <div class="side-menu-container" [ngClass]="{'hidden': !showSideMenu}"
-        (click)="toggleSideMenu()">
-        <div *ngIf="!showNavbar" class="side-menu px-4 py-3">
-            <ul class="nav-menu w-100 m-0 p-0">
-                <li *ngFor="let tab of tabItems" class="nav-menu-item text-blue-white">
-                    <a class="nav-link" [routerLink]="tab.routerLink" [attr.data-name]="tab.name" data-toggle="tab"
-                        routerLinkActive="active">{{ tab.label }}</a>
-                </li>
-            </ul>
-        </div>
-    </div>
 </header>
+
+<div class="side-menu-container" [ngClass]="{'hidden': !showSideMenu}" (click)="toggleSideMenu()">
+    <div *ngIf="!showNavbar" class="side-menu px-4 py-3">
+        <ul class="nav-menu w-100 m-0 p-0">
+            <li *ngFor="let tab of tabItems" class="nav-menu-item text-blue-white">
+                <a class="nav-link" [routerLink]="tab.routerLink" [attr.data-name]="tab.name" data-toggle="tab"
+                    routerLinkActive="active">{{ tab.label }}</a>
+            </li>
+        </ul>
+    </div>
+</div>
