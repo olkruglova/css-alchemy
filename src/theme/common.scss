@@ -29,23 +29,14 @@ button {
     }
 }
 
-.text-white {
+.color-white {
     color: $white;
 }
 
-.text-blue-white {
+.color-blue-white {
     color: $white-blue;
 }
 
-@media #{$md},
-#{$lg} {
-    .container {
-        width: 70%;
-    }
-}
-
-@media #{$gt-lg} {
-    .container {
-        width: 80%;
-    }
+.color-black-main {
+    color: $black-main;
 }

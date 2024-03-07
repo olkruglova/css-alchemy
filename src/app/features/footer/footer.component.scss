@@ -11,6 +11,10 @@
         }
     }
 
+    .container {
+        width: 70%;
+    }
+
     .footer-top-container {
         color: $gray;
         min-height: 400px;
@@ -21,5 +25,21 @@
     .footer-bottom-container {
         min-height: 60px;
         background-color: $aquamarine;
+    }
+
+
+    @media #{gt-xs},
+    #{$lt-lg} {
+        .container {
+            width: 80%;
+            // margin-left: 1.5rem !important
+        }
+    }
+
+    @media #{$lt-md} {
+        .container {
+            width: 100%;
+            // margin-left: 1.5rem !important
+        }
     }
 }

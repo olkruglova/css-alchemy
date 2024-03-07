@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     );
 
     this.tabItems = [
-      { label: 'Main', routerLink: '/main', name: 'main' },
+      { label: 'Guides', routerLink: '/guides', name: 'guides' },
       { label: 'Articles', routerLink: '/articles', name: 'articles' },
       { label: 'Edit', routerLink: '/main2', name: 'main' },
       { label: 'About', routerLink: '/main3', name: 'main' },
@@ -39,7 +39,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   toggleSideMenu() {
-    console.log('toggleSideMenu');
     this.showSideMenu = !this.showSideMenu;
   }
 

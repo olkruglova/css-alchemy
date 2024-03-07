@@ -10,6 +10,11 @@
         transition: all 0.3s ease-in-out;
     }
 
+    .header-container {
+        width: 80%;
+        transition: all 0.3s ease-in-out;
+    }
+
     .navbar-brand {
         width: 120px;
         height: 120px;
@@ -29,8 +34,6 @@
     }
 
     .nav-menu-container {
-        margin-left: 180px;
-
         ul.nav-menu {
             list-style-type: none;
             flex-wrap: wrap;
@@ -135,13 +138,15 @@
         }
 
         .nav-menu-container {
-            margin-left: 100px;
-
             .nav-menu-item {
                 font-size: 0.85rem;
             }
         }
+    }
 
-
+    @media #{$lt-md} {
+        .header-container {
+            width: 100%;
+        }
     }
 }
