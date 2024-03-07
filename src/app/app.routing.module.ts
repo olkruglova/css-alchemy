@@ -13,10 +13,10 @@ export interface RouteExt extends Route {
 
 export const appRoutes: RouteExt[] = [
   {
-    path: 'main',
+    path: 'guides',
     pathMatch: 'full',
     component: MainComponent,
-    data: { name: 'main', title: 'Main' },
+    data: { name: 'guides', title: 'Guides' },
   },
   {
     path: 'overview',

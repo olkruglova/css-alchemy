@@ -1,8 +1,11 @@
-<div class="main-container d-flex px-4">
-    <cssalc-sidebar></cssalc-sidebar>
-    <div class="container d-flex p-0">
-        <div class="divider"></div>
-        <div class="content ps-4">
+<div class="main-container d-flex w-100">
+    <div *ngIf="showSidebar" class="sidebar-container ps-4">
+        <cssalc-sidebar></cssalc-sidebar>
+    </div>
+
+    <div class="wrapper p-0 d-flex" [ngClass]="{'m-0': showSidebar}">
+        <div *ngIf="showSidebar" class="divider"></div>
+        <div class="content pe-4">
             <div class="card main-content"></div>
         </div>
     </div>
