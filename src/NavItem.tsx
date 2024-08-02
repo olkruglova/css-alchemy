@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { NavItem } from "./Header";
 import { useState } from "react";
 
@@ -11,28 +11,34 @@ function NavigationItem({ item }: NavItemProps) {
   const [menuOpened, setMenuOpened] = useState(false);
 
   return (
-    <li
-      className="text-lightBlue hover:text-white relative"
+    <NavLink
+      className={({ isActive }) =>
+        `text-lightBlue hover:text-white relative ${isActive ? "text-white" : ""}`
+      }
       onMouseOver={() => setMenuOpened(true)}
       onMouseOut={() => setMenuOpened(false)}
+      to={url!}
     >
-      <Link to={url!}>{name}</Link>
+      {name}
       {menuOpened && children && (
         <div className="absolute bg-blue w-40 px-4 pb-4 top-full left-0 rounded-md shadow-lg">
-          <ul>
+          <ul className="flex flex-col">
             {children.map((child, childIndex) => (
-              <li
+              <NavLink
                 key={childIndex}
-                className="text-lightBlue mt-3 hover:text-white"
+                className={({ isActive }) =>
+                  `text-lightBlue hover:text-white relative ${isActive ? "text-white" : ""} mt-3`
+                }
+                to={child.url!}
                 onClick={() => setMenuOpened(false)}
               >
-                <Link to={child.url!}>{child.name}</Link>
-              </li>
+                {child.name}
+              </NavLink>
             ))}
           </ul>
         </div>
       )}
-    </li>
+    </NavLink>
   );
 }
 

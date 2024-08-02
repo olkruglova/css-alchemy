@@ -22,17 +22,17 @@ function Header() {
       children: [
         {
           name: "Shadows",
-          url: "/shadows",
+          url: "/guides/shadows",
           visible: true,
         },
         {
           name: "Text",
-          url: "/text",
+          url: "/guides/text",
           visible: true,
         },
         {
           name: "Animations",
-          url: "/animations",
+          url: "/guides/animations",
           visible: true,
         },
       ],
