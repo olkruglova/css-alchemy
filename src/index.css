@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+@layer base {
+    @font-face {
+        font-family: 'BeautifulQueen';
+        src: url('/font/BeautifulQueen.otf');
+      }
+  } */
+
+@layer components {
+  #root {
+    @apply font-body;
+  }
+
+  .text-header {
+    @apply font-header;
+  }
+}
+/* 
+  @layer utilities {
+    .grayed-out-disabled {
+      @apply disabled:opacity-50;
+    }
+  } */
