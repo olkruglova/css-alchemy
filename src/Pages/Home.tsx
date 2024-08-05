@@ -3,7 +3,7 @@ import Card from "../Card";
 
 function Home() {
   return (
-    <div className="flex flex-row h-full w-4/5 pt-16 pb-8 px-12 m-auto overflow-hidden">
+    <div className="flex flex-row h-[calc(+100vh)] w-4/5 pt-16 pb-8 px-12 m-auto overflow-hidden">
       <div className="relative flex flex-col w-full">
         <div className="flex flex-row gap-6 h-2/4 mb-12">
           <div className="w-1/3 ">
@@ -12,7 +12,7 @@ function Home() {
               hoverBorderColor="border-green-light"
               bgImg="bg-shadows-bg"
               text="Shadows"
-              url="/shadows"
+              url="/guides/shadows"
             />
           </div>
           <div className="w-1/3 ">
@@ -21,7 +21,7 @@ function Home() {
               hoverBorderColor="border-white"
               bgImg="bg-text-bg"
               text="Text"
-              url="/text"
+              url="/guides/text"
             />
           </div>
           <div className="w-1/3 ">
@@ -30,7 +30,7 @@ function Home() {
               hoverBorderColor="border-orange-light"
               bgImg="bg-animation-bg"
               text="Animations"
-              url="/animations"
+              url="/guides/animations"
             />
           </div>
         </div>

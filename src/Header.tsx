@@ -1,24 +1,22 @@
 import { Link } from "react-router-dom";
-import NavItem from "./NavItem";
-import NavigationItem from "./NavItem";
+import NavItem from "./NavigationItem";
+import NavigationItem from "./NavigationItem";
 
 export interface NavItem {
   name: string;
   url?: string;
   visible?: boolean;
   children?: NavItem[];
+  notClickable?: boolean;
 }
 
 function Header() {
   const items = [
     {
-      name: "Home",
-      url: "/",
-      visible: true,
-    },
-    {
       name: "Guides",
       visible: true,
+      url: "/guides",
+      notClickable: true,
       children: [
         {
           name: "Shadows",
@@ -56,11 +54,11 @@ function Header() {
           <div className="bg-logo-bg bg-contain bg-no-repeat bg-center w-20 h-12 opacity-30 ml-6 mr-12 hover:opacity-75"></div>
         </Link>
 
-        <ul className="flex flex-row items-center justify-around w-full">
+        <div className="flex flex-row items-center justify-around w-full">
           {items.map((item, index) =>
             item.visible ? <NavigationItem key={index} item={item} /> : null,
           )}
-        </ul>
+        </div>
       </div>
     </div>
   );

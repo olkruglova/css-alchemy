@@ -7,10 +7,10 @@ import {
 import Home from "./Pages/Home";
 import Header from "./Header";
 import Footer from "./Footer";
-import Shadows from "./Pages/Guides/Shadows";
-import Text from "./Pages/Guides/Text";
 import Guides from "./Pages/Guides/Guides";
-import Animations from "./Pages/Guides/Animations";
+import About from "./Pages/About";
+import Articles from "./Pages/Articles";
+import { lazy, Suspense } from "react";
 
 function App() {
   return (
@@ -20,6 +20,10 @@ function App() {
   );
 }
 
+const Shadows = lazy(() => import("./Pages/Guides/Shadows"));
+const Animations = lazy(() => import("./Pages/Guides/Animations"));
+const Text = lazy(() => import("./Pages/Guides/Text"));
+
 function MainContent() {
   const location = useLocation();
 
@@ -27,14 +31,18 @@ function MainContent() {
     <>
       {location.pathname !== "/" && <Header />}
       <div className="min-h-[calc(100vh-80px)] overflow-x-hidden">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/guides" element={<Guides />}>
-            <Route path="shadows" element={<Shadows />} />
-            <Route path="text" element={<Text />} />
-            <Route path="animations" element={<Animations />} />
-          </Route>
-        </Routes>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/guides" element={<Guides />}>
+              <Route path="shadows" element={<Shadows />} />
+              <Route path="text" element={<Text />} />
+              <Route path="animations" element={<Animations />} />
+            </Route>
+            <Route path="/about" element={<About />} />
+            <Route path="/articles" element={<Articles />} />
+          </Routes>
+        </Suspense>
       </div>
 
       {location.pathname !== "/" && <Footer />}
