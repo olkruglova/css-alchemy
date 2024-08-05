@@ -1,0 +1,118 @@
+{
+  "box-shadow": [
+    {
+      "name": "box-shadows",
+      "title": "Box Shadow Best Examples",
+      "annotation": "",
+      "content": "",
+      "sources": [
+        {
+          "title": "box-shadow",
+          "url": ""
+        },
+        {
+          "title": "box-shadow",
+          "url": ""
+        },
+        {
+          "title": "box-shadow",
+          "url": ""
+        },
+        {
+          "title": "box-shadow",
+          "url": ""
+        },
+        {
+          "title": "box-shadow",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "name": "Shadow 2",
+      "color": "rgba(0, 0, 0, 0.2)",
+      "x": 2,
+      "y": 2,
+      "blur": 4
+    },
+    {
+      "name": "Shadow 3",
+      "color": "rgba(0, 0, 0, 0.3)",
+      "x": 4,
+      "y": 4,
+      "blur": 6
+    },
+    {
+      "name": "Shadow 4",
+      "color": "rgba(0, 0, 0, 0.4)",
+      "x": 6,
+      "y": 6,
+      "blur": 8
+    },
+    {
+      "name": "Shadow 5",
+      "color": "rgba(0, 0, 0, 0.5)",
+      "x": 8,
+      "y": 8,
+      "blur": 10
+    }
+  ],
+  "text-shadow": [
+    {
+      "name": "text-shadows",
+      "title": "Text Shadow Best Examples",
+      "annotation": "",
+      "content": "",
+      "sources": [
+        {
+          "title": "text-shadows",
+          "url": ""
+        },
+        {
+          "title": "text-shadows",
+          "url": ""
+        },
+        {
+          "title": "text-shadows",
+          "url": ""
+        },
+        {
+          "title": "text-shadows",
+          "url": ""
+        },
+        {
+          "title": "text-shadows",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "name": "Shadow 2",
+      "color": "rgba(0, 0, 0, 0.2)",
+      "x": 2,
+      "y": 2,
+      "blur": 4
+    },
+    {
+      "name": "Shadow 3",
+      "color": "rgba(0, 0, 0, 0.3)",
+      "x": 4,
+      "y": 4,
+      "blur": 6
+    },
+    {
+      "name": "Shadow 4",
+      "color": "rgba(0, 0, 0, 0.4)",
+      "x": 6,
+      "y": 6,
+      "blur": 8
+    },
+    {
+      "name": "Shadow 5",
+      "color": "rgba(0, 0, 0, 0.5)",
+      "x": 8,
+      "y": 8,
+      "blur": 10
+    }
+  ]
+}

@@ -35,9 +35,9 @@ function MainContent() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/guides" element={<Guides />}>
-              <Route path="shadows" element={<Shadows />} />
-              <Route path="text" element={<Text />} />
-              <Route path="animations" element={<Animations />} />
+              <Route path="shadows/:shadowType" Component={Shadows} />
+              <Route path="text" Component={Text} />
+              <Route path="animations/:animationType" Component={Animations} />
             </Route>
             <Route path="/about" element={<About />} />
             <Route path="/articles" element={<Articles />} />
